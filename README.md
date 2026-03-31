@@ -3,11 +3,12 @@
 </p>
 
 <h1 align="center">
-  PteroSim — High-Fidelity UAV Simulator
+  PteroSim
 </h1>
 
 <p align="center">
-  <b>JSBSim 6-DOF physics · PX4 & ArduPilot SITL · gRPC API · Unreal Engine 5</b>
+  <b>High-fidelity UAV simulator built on Unreal Engine 5</b><br>
+  <sub>JSBSim 6-DOF physics · PX4 & ArduPilot SITL · gRPC API</sub>
 </p>
 
 <p align="center">
@@ -23,74 +24,96 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/@PteroLabsAI">Watch Demo</a> ·
+  <a href="https://www.youtube.com/watch?v=4QMwmZL_3O4">Watch Demo</a> ·
   <a href="https://pterolabs.ai">Website</a> ·
-  <a href="https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases">Download</a>
+  <a href="https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases">Download</a> ·
+  <a href="#quick-start">Quick Start</a>
 </p>
 
 ---
+
+<!-- TODO: Replace with actual screenshots/GIFs -->
+<p align="center">
+  <img src="docs/images/screenshot-hero.png" alt="PteroSim in action" width="90%">
+</p>
+
+## About
+
+PteroSim is a standalone UAV flight simulator for drone development, testing, and research. It uses **JSBSim 6-DOF flight dynamics** for accurate physics and connects natively to **PX4** and **ArduPilot** autopilots via MAVLink.
+
+Free to use. Full gRPC API included. No strings attached.
+
+## Features
+
+<table>
+  <tr>
+    <td width="50%">
+
+**Flight Dynamics**
+- JSBSim 6-DOF aerodynamic simulation
+- 6x to 10x faster than real-time
+- Wind and turbulence modeling
+
+</td>
+    <td width="50%">
+
+**Flight Stacks**
+- PX4 SITL with MAVLink lockstep
+- ArduPilot SITL, no middleware
+- OFFBOARD, missions, manual control
+
+</td>
+  </tr>
+  <tr>
+    <td width="50%">
+
+**Sensors**
+- IMU, GPS, barometer, airspeed
+- Camera (via API)
+- Extensible sensor framework
+
+</td>
+    <td width="50%">
+
+**API & Automation**
+- Full gRPC API
+- Spawn, control, read telemetry
+- Multi-drone orchestration
+
+</td>
+  </tr>
+</table>
+
+## Vehicle Types
+
+<!-- TODO: Replace with screenshots or GIF showing all vehicle types -->
+<p align="center">
+  <img src="docs/images/vehicle-types.gif" alt="Multi-rotor, helicopter, VTOL, fixed-wing" width="90%">
+</p>
 
 <p align="center">
-  <img src="docs/images/screenshot-flight.png" alt="Flight View" width="45%">
-  &nbsp;&nbsp;
-  <img src="docs/images/screenshot-cockpit.png" alt="Cockpit View" width="45%">
+  <b>Multi-Rotor</b> · <b>Helicopter</b> · <b>VTOL</b> · <b>Fixed-Wing</b>
 </p>
-
-## What is PteroSim?
-
-PteroSim is a **standalone UAV simulator** built on Unreal Engine 5 with **JSBSim 6-DOF flight dynamics**. It connects natively to **PX4** and **ArduPilot** autopilots via MAVLink, making it a powerful tool for drone development, testing, and research.
-
-Unlike archived alternatives (AirSim), PteroSim is **actively developed** and ships with a full **gRPC API** for programmatic control — even in the Free tier.
-
-### Key Features
-
-- **JSBSim 6-DOF Physics** — accurate aerodynamic simulation with real flight dynamics models
-- **PX4 SITL** — hardware-in-the-loop via MAVLink with lockstep synchronization
-- **ArduPilot SITL** — native support, no middleware required
-- **gRPC API** — full programmatic control: spawn drones, read sensors, send commands
-- **Stock Airframes** — F450 quadcopter, AH-1 Cobra helicopter, DeltaQuad VTOL
-- **Sensor Suite** — IMU, GPS, barometer, airspeed, camera
-- **Beyond Real-time** — 6x–10x faster than real-time simulation
-- **Multi-Instance** — run 100+ agents simultaneously with mixed fleets
-- **Visual Weather** — dynamic sky, clouds, time-of-day
-- **Unreal Engine 5** — photorealistic rendering with Lumen GI and Nanite
-
----
 
 ## Quick Start
 
-### 1. Download
+**1. Download** the latest release from [GitHub Releases](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases).
 
-Grab the latest release from [GitHub Releases](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases).
+**2. Extract and run** `PteroSim.exe`.
 
-### 2. Extract & Run
+**3. Connect your autopilot:**
 
 ```bash
-# Unzip the archive
-unzip PteroSim-v0.1.0-Win64.zip
-
-# Launch the simulator
-PteroSim.exe
-```
-
-### 3. Connect Your Autopilot
-
-**PX4:**
-```bash
-# Start PX4 SITL (in WSL or Linux)
+# PX4
 cd PX4-Autopilot
 make px4_sitl none_iris
-# PteroSim connects automatically on TCP port 4560
-```
+# Connects automatically on TCP 4560
 
-**ArduPilot:**
-```bash
-# Start ArduPilot SITL
+# ArduPilot
 sim_vehicle.py -v ArduCopter -f json --console --map
-# Configure connection to PteroSim's JSON endpoint
 ```
 
-### 4. Use the API (Optional)
+**4. (Optional) Use the API:**
 
 ```python
 import grpc
@@ -98,12 +121,8 @@ from pterosim import simulator_pb2, simulator_pb2_grpc
 
 channel = grpc.insecure_channel('localhost:50051')
 stub = simulator_pb2_grpc.SimulatorStub(channel)
-
-# Spawn a drone
 stub.SpawnDrone(simulator_pb2.SpawnRequest(airframe="F450"))
 ```
-
----
 
 ## System Requirements
 
@@ -111,48 +130,39 @@ stub.SpawnDrone(simulator_pb2.SpawnRequest(airframe="F450"))
 |---|---------|-------------|
 | **OS** | Windows 10 64-bit | Windows 11 64-bit |
 | **CPU** | 4 cores, 3.0 GHz | 8+ cores, 3.5+ GHz |
-| **RAM** | 8 GB | 16+ GB |
+| **RAM** | 8 GB | 16 GB |
 | **GPU** | GTX 1060 / RX 580 | RTX 3070+ / RX 6800+ |
 | **Storage** | 5 GB | 10 GB (SSD) |
 
----
-
 ## Documentation
 
-Full documentation is available at [pterolabs.ai](https://pterolabs.ai).
+Full documentation at [pterolabs.ai](https://pterolabs.ai).
 
 <!-- TODO: Uncomment when docs pages are live
-- [Getting Started Guide](https://pterolabs.ai/docs/getting-started)
+- [Getting Started](https://pterolabs.ai/docs/getting-started)
 - [gRPC API Reference](https://pterolabs.ai/docs/api)
-- [Custom Airframes Guide](https://pterolabs.ai/docs/custom-airframes) *(Pro)*
 - [PX4 Integration](https://pterolabs.ai/docs/px4)
 - [ArduPilot Integration](https://pterolabs.ai/docs/ardupilot)
+- [Custom Airframes](https://pterolabs.ai/docs/custom-airframes)
 -->
 
----
+## Contact
 
-## Community & Contact
-
-- **Website** — [pterolabs.ai](https://pterolabs.ai)
-- **YouTube** — [@PteroLabsAI](https://www.youtube.com/@PteroLabsAI) — demos, tutorials, and showcases
-- **LinkedIn** — [PteroLabs](https://www.linkedin.com/company/pterolabs)
-- **Email** — info@pterolabs.ai
-
----
+| | |
+|---|---|
+| **Website** | [pterolabs.ai](https://pterolabs.ai) |
+| **YouTube** | [@PteroLabsAI](https://www.youtube.com/@PteroLabsAI) |
+| **LinkedIn** | [PteroLabs](https://www.linkedin.com/company/pterolabs) |
+| **Email** | info@pterolabs.ai |
 
 ## License
 
-PteroSim is proprietary software developed by **PteroLabs AI**.
-
-- **Free tier** — free for non-commercial, personal, and academic use
-- **Edu tier** — licensed for educational institutions
-- **Pro tier** — licensed for commercial use
-
-See [LICENSE](LICENSE) for full terms.
+PteroSim is proprietary software by [PteroLabs AI](https://pterolabs.ai).  
+Free for non-commercial, personal, and academic use. See [LICENSE](LICENSE) for details.
 
 ---
 
 <p align="center">
   <sub>Built with Unreal Engine 5 · JSBSim · PX4 · ArduPilot</sub><br>
-  <sub>© 2026 PteroLabs AI. All rights reserved.</sub>
+  <sub>&copy; 2026 PteroLabs AI</sub>
 </p>
