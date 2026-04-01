@@ -1,0 +1,126 @@
+PteroSim End User License Agreement (EULA)
+Copyright (c) 2026 PteroLabs AI. All rights reserved.
+
+Last updated: April 1, 2026
+
+By downloading, installing, or using PteroSim ("Software"), you agree to the
+following terms.
+
+
+1. DEFINITIONS
+
+"Commercial Use" means any use of the Software that directly or indirectly
+generates revenue, supports revenue-generating activities, or is performed on
+behalf of a commercial entity. This includes, but is not limited to: client
+work, production deployment, paid training, and integration into commercial
+products or services.
+
+"Non-Commercial Use" means personal projects, academic research, education,
+and evaluation, where the Software is not used for Commercial Use.
+
+"License Key" means a unique code provided by PteroLabs AI that unlocks
+additional features of the Software.
+
+
+2. GRANT OF LICENSE
+
+(a) Free Tier. PteroLabs AI grants you a non-exclusive, non-transferable,
+    revocable license to use the Software free of charge for Non-Commercial
+    Use, subject to the feature limitations of the Free tier.
+
+(b) Edu Tier. With a valid Edu License Key, you may use the Software for
+    educational purposes at accredited academic institutions, including
+    coursework, student projects, and published academic research.
+
+(c) Pro Tier. With a valid Pro License Key, you may use the Software for
+    Commercial Use, subject to the terms of your license agreement with
+    PteroLabs AI.
+
+Each License Key is limited to the number of machines specified at purchase.
+License Keys are non-transferable.
+
+
+3. RESTRICTIONS
+
+You may NOT:
+
+(a) Reverse engineer, decompile, disassemble, or attempt to derive the source
+    code of the Software.
+
+(b) Redistribute, sublicense, rent, lease, or lend the Software to any third
+    party.
+
+(c) Remove, alter, or obscure any proprietary notices, watermarks, or license
+    management mechanisms in the Software.
+
+(d) Use the Software for Commercial Use without a valid Pro License Key.
+
+(e) Share, publish, or transfer your License Key to another person or entity.
+
+(f) Use the Software to build a competing product or service.
+
+
+4. INTELLECTUAL PROPERTY
+
+The Software, including all code, assets, documentation, and related materials,
+is the exclusive property of PteroLabs AI. This license does not grant you any
+ownership rights. All rights not expressly granted are reserved.
+
+
+5. DATA COLLECTION
+
+The Software may collect anonymous usage data (e.g., feature usage, crash
+reports) to improve the product. No personally identifiable information is
+collected without your consent. License validation may transmit your License
+Key and machine identifier to PteroLabs AI servers.
+
+
+6. TERMINATION
+
+This license is effective until terminated. It terminates automatically if you
+violate any of its terms. Upon termination, you must immediately stop using the
+Software and delete all copies. PteroLabs AI may also revoke License Keys at
+its discretion in case of license violations.
+
+
+7. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+
+8. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL PTEROLABS AI BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF
+THE SOFTWARE. PTEROLABS AI'S TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU
+PAID FOR YOUR LICENSE KEY IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.
+
+
+9. UPDATES TO THIS AGREEMENT
+
+PteroLabs AI may update this EULA from time to time. Continued use of the
+Software after changes are posted constitutes your acceptance of the revised
+terms. The latest version is always available in the Software distribution
+and at https://pterolabs.ai.
+
+
+10. THIRD-PARTY COMPONENTS
+
+The Software includes open-source components distributed under their own
+licenses. See THIRD_PARTY_NOTICES for a full list of components, their
+licenses, and copyright notices. Nothing in this EULA restricts your rights
+under those licenses with respect to the third-party components alone.
+
+
+11. GOVERNING LAW
+
+This agreement shall be governed by and construed in accordance with the laws
+of the United States, without regard to conflict of law principles.
+
+
+12. CONTACT
+
+For licensing inquiries: info@pterolabs.ai
+Website: https://pterolabs.ai

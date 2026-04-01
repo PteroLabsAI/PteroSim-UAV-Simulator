@@ -21,13 +21,17 @@
   <a href="https://www.youtube.com/@PteroLabsAI">
     <img src="https://img.shields.io/badge/YouTube-Demos-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
   </a>
+  <a href="https://www.linkedin.com/company/pterolabs">
+    <img src="https://img.shields.io/badge/LinkedIn-PteroLabs-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
 </p>
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=4QMwmZL_3O4">Watch Demo</a> ·
   <a href="https://pterolabs.ai">Website</a> ·
   <a href="https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases">Download</a> ·
-  <a href="#quick-start">Quick Start</a>
+  <a href="#quick-start">Quick Start</a> ·
+  <a href="mailto:info@pterolabs.ai">Contact</a>
 </p>
 
 ---
@@ -145,15 +149,6 @@ Full documentation at [pterolabs.ai](https://pterolabs.ai).
 - [ArduPilot Integration](https://pterolabs.ai/docs/ardupilot)
 - [Custom Airframes](https://pterolabs.ai/docs/custom-airframes)
 -->
-
-## Contact
-
-| | |
-|---|---|
-| **Website** | [pterolabs.ai](https://pterolabs.ai) |
-| **YouTube** | [@PteroLabsAI](https://www.youtube.com/@PteroLabsAI) |
-| **LinkedIn** | [PteroLabs](https://www.linkedin.com/company/pterolabs) |
-| **Email** | info@pterolabs.ai |
 
 ## License
 
