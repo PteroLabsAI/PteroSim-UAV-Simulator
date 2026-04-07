@@ -8,7 +8,7 @@
 
 <p align="center">
   <b>High-fidelity UAV simulator built on Unreal Engine 5</b><br>
-  <sub>JSBSim 6-DOF physics · PX4 & ArduPilot SITL · gRPC API</sub>
+  <sub>PX4 & ArduPilot SITL · Programmable API · Multi-vehicle support</sub>
 </p>
 
 <p align="center">
@@ -43,50 +43,15 @@
 
 ## About
 
-PteroSim is a standalone UAV flight simulator for drone development, testing, and research. It uses **JSBSim 6-DOF flight dynamics** for accurate physics and connects natively to **PX4** and **ArduPilot** autopilots via MAVLink.
-
-Free to use. Full gRPC API included. No strings attached.
+PteroSim is a standalone UAV flight simulator for drone development, testing, and research. Accurate 6-DOF flight dynamics, native **PX4** and **ArduPilot** SITL support, and a full programmatic API — free to use, no strings attached.
 
 ## Features
 
-<table>
-  <tr>
-    <td width="50%">
-
-**Flight Dynamics**
-- JSBSim 6-DOF aerodynamic simulation
-- 6x to 10x faster than real-time
-- Wind and turbulence modeling
-
-</td>
-    <td width="50%">
-
-**Flight Stacks**
-- PX4 SITL with MAVLink lockstep
-- ArduPilot SITL, no middleware
-- OFFBOARD, missions, manual control
-
-</td>
-  </tr>
-  <tr>
-    <td width="50%">
-
-**Sensors**
-- IMU, GPS, barometer, airspeed
-- Camera (via API)
-- Extensible sensor framework
-
-</td>
-    <td width="50%">
-
-**API & Automation**
-- Full gRPC API
-- Spawn, control, read telemetry
-- Multi-drone orchestration
-
-</td>
-  </tr>
-</table>
+- **6-DOF flight dynamics** — up to 10x real-time, wind and turbulence
+- **PX4 & ArduPilot SITL** — plug in your autopilot, fly immediately
+- **Sensors** — IMU, GPS, barometer, airspeed, camera
+- **Programmatic API** — spawn, control, and orchestrate multiple drones
+- **Python SDK** — `pip install pterosim`, connect and automate in 3 lines
 
 ## Vehicle Types
 
@@ -120,23 +85,21 @@ sim_vehicle.py -v ArduCopter -f json --console --map
 **4. (Optional) Use the API:**
 
 ```python
-import grpc
-from pterosim import simulator_pb2, simulator_pb2_grpc
+from pterosim import PteroSimClient
 
-channel = grpc.insecure_channel('localhost:50051')
-stub = simulator_pb2_grpc.SimulatorStub(channel)
-stub.SpawnDrone(simulator_pb2.SpawnRequest(airframe="F450"))
+client = PteroSimClient("localhost:50051")
+client.spawn_drone(airframe="F450")
 ```
 
 ## System Requirements
 
 | | Minimum | Recommended |
 |---|---------|-------------|
-| **OS** | Windows 10 64-bit | Windows 11 64-bit |
-| **CPU** | 4 cores, 3.0 GHz | 8+ cores, 3.5+ GHz |
+| **OS** | Windows 10 64-bit / Ubuntu 22.04 | Windows 11 / Ubuntu 24.04 |
+| **CPU** | Quad-core, 2.5 GHz | 6+ cores, 3.0+ GHz |
 | **RAM** | 8 GB | 16 GB |
-| **GPU** | GTX 1060 / RX 580 | RTX 3070+ / RX 6800+ |
-| **Storage** | 5 GB | 10 GB (SSD) |
+| **GPU** | GTX 770 / RX 570 | RTX 2070+ / RX 5700+ |
+| **Storage** | 5 GB | 10 GB SSD |
 
 ## Documentation
 
@@ -144,7 +107,7 @@ Full documentation at [pterolabs.ai](https://pterolabs.ai).
 
 <!-- TODO: Uncomment when docs pages are live
 - [Getting Started](https://pterolabs.ai/docs/getting-started)
-- [gRPC API Reference](https://pterolabs.ai/docs/api)
+- [API Reference](https://pterolabs.ai/docs/api)
 - [PX4 Integration](https://pterolabs.ai/docs/px4)
 - [ArduPilot Integration](https://pterolabs.ai/docs/ardupilot)
 - [Custom Airframes](https://pterolabs.ai/docs/custom-airframes)
@@ -158,6 +121,6 @@ Free for non-commercial, personal, and academic use. See [LICENSE](LICENSE) for 
 ---
 
 <p align="center">
-  <sub>Built with Unreal Engine 5 · JSBSim · PX4 · ArduPilot</sub><br>
+  <sub>Built with Unreal Engine 5</sub><br>
   <sub>&copy; 2026 PteroLabs AI</sub>
 </p>
