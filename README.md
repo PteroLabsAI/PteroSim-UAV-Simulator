@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/images/pterosim-banner.png" alt="PteroSim Banner" width="100%">
-</p>
-
 <h1 align="center">
   PteroSim
 </h1>
