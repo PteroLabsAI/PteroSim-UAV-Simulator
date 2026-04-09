@@ -39,15 +39,16 @@
 
 ## About
 
-PteroSim is a standalone UAV flight simulator for drone development, testing, and research. Accurate 6-DOF flight dynamics, native **PX4** and **ArduPilot** SITL support, and a full programmatic API — free to use, no strings attached.
+PteroSim is a standalone UAV flight simulator for drone development, testing, and research. Accurate 6-DOF flight dynamics, native **PX4** and **ArduPilot** SITL support, and a full programmatic API. Free to use, no strings attached.
 
 ## Features
 
-- **6-DOF flight dynamics** — up to 10x real-time, wind and turbulence
-- **PX4 & ArduPilot SITL** — plug in your autopilot, fly immediately
-- **Sensors** — IMU, GPS, barometer, airspeed, camera
-- **Programmatic API** — spawn, control, and orchestrate multiple drones
-- **Python SDK** — `pip install pterosim`, connect and automate in 3 lines
+- 6-DOF flight dynamics, up to 10x real-time
+- Wind and turbulence modeling
+- PX4 and ArduPilot SITL
+- IMU, GPS, barometer, airspeed, camera
+- Programmatic API for multi-drone orchestration
+- Python SDK: `pip install pterosim`
 
 ## Vehicle Types
 
@@ -60,32 +61,9 @@ PteroSim is a standalone UAV flight simulator for drone development, testing, an
   <b>Multi-Rotor</b> · <b>Helicopter</b> · <b>VTOL</b> · <b>Fixed-Wing</b>
 </p>
 
-## Quick Start
+## Getting Started
 
-**1. Download** the latest release from [GitHub Releases](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases).
-
-**2. Extract and run** `PteroSim.exe`.
-
-**3. Connect your autopilot:**
-
-```bash
-# PX4
-cd PX4-Autopilot
-make px4_sitl none_iris
-# Connects automatically on TCP 4560
-
-# ArduPilot
-sim_vehicle.py -v ArduCopter -f json --console --map
-```
-
-**4. (Optional) Use the API:**
-
-```python
-from pterosim import PteroSimClient
-
-client = PteroSimClient("localhost:50051")
-client.spawn_drone(airframe="F450")
-```
+Download the latest release from [GitHub Releases](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases), extract, and run `PteroSim.exe`. See the [documentation](https://pterolabs.ai) for setup guides and API reference.
 
 ## System Requirements
 
