@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <b>High-fidelity UAV simulator built on Unreal Engine 5</b><br>
+  <b>High-fidelity UAV simulation platform built on Unreal Engine 5</b><br>
   <sub>PX4 & ArduPilot SITL · Programmable API · Multi-vehicle support</sub>
 </p>
 
@@ -39,7 +39,7 @@
 
 ## About
 
-PteroSim is a standalone UAV flight simulator for drone development, testing, and research. Accurate 6-DOF flight dynamics, native **PX4** and **ArduPilot** SITL support, and a full programmatic API. Free to use, no strings attached.
+PteroSim is a UAV simulation platform for drone development, testing, and research. Accurate 6-DOF flight dynamics, native **PX4** and **ArduPilot** SITL support, and a full programmatic API. Free to use, no strings attached.
 
 ## Features
 
@@ -50,16 +50,43 @@ PteroSim is a standalone UAV flight simulator for drone development, testing, an
 - Programmatic API for multi-drone orchestration
 - Python SDK: `pip install pterosim`
 
-## Vehicle Types
+## Vehicles
 
-<!-- TODO: Replace with screenshots or GIF showing all vehicle types -->
-<p align="center">
-  <img src="docs/images/vehicle-types.gif" alt="Multi-rotor, helicopter, VTOL, fixed-wing" width="90%">
-</p>
-
-<p align="center">
-  <b>Multi-Rotor</b> · <b>Helicopter</b> · <b>VTOL</b> · <b>Fixed-Wing</b>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="pictures/Drone.png" width="100%"><br>
+      <b>Quadcopter</b><br>
+      PX4 · ArduPilot · Betaflight
+    </td>
+    <td align="center">
+      <img src="pictures/Cobra.png" width="100%"><br>
+      <b>Helicopter</b><br>
+      PX4 · ArduPilot
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="pictures/Delta.png" width="100%"><br>
+      <b>VTOL</b><br>
+      PX4 · ArduPilot
+    </td>
+    <td align="center">
+      <img src="pictures/Ingenuity.png" width="100%"><br>
+      <b>Coaxial Helicopter</b><br>
+      ArduPilot
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="pictures/Cessna.png" width="100%"><br>
+      <b>Fixed-Wing</b><br>
+      PX4 · ArduPilot
+    </td>
+    <td align="center">
+    </td>
+  </tr>
+</table>
 
 ## Getting Started
 
