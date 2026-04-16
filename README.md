@@ -39,7 +39,7 @@
 
 ## About
 
-PteroSim is a UAV simulation platform for drone development, testing, and research. Accurate 6-DOF flight dynamics, native **PX4** and **ArduPilot** SITL support, and a full programmatic API. Free to use, no strings attached.
+PteroSim is a UAV simulation platform for drone development, testing, and research. Accurate 6-DOF flight dynamics, native **PX4** and **ArduPilot** SITL support, and a full programmatic API.
 
 ## Features
 
