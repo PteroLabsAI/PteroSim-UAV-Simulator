@@ -32,9 +32,8 @@
 
 ---
 
-<!-- TODO: Replace with actual screenshots/GIFs -->
 <p align="center">
-  <img src="docs/images/screenshot-hero.png" alt="PteroSim in action" width="90%">
+  <img src="pictures/PteroSimPoster.png" alt="PteroSim in action" width="90%">
 </p>
 
 ## About
@@ -84,6 +83,9 @@ PteroSim is a UAV simulation platform for drone development, testing, and resear
       PX4 · ArduPilot
     </td>
     <td align="center">
+      <img src="pictures/Tailsitter.png" width="100%"><br>
+      <b>Tailsitter</b><br>
+      PX4 · ArduPilot
     </td>
   </tr>
 </table>
