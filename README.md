@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <b>High-fidelity UAV simulation platform built on Unreal Engine 5</b><br>
+  <b>UAV simulation platform built on Unreal Engine 5</b><br>
   <sub>PX4 & ArduPilot SITL · Programmable API · Multi-vehicle support</sub>
 </p>
 
