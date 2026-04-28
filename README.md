@@ -124,6 +124,5 @@ Free for non-commercial, personal, and academic use. See [LICENSE](LICENSE) for 
 ---
 
 <p align="center">
-  <sub>Built with Unreal Engine 5</sub><br>
   <sub>&copy; 2026 PteroLabs AI</sub>
 </p>
