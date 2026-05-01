@@ -91,8 +91,8 @@ PteroSim is a UAV simulation platform for drone development, testing, and resear
 </table>
 
 ## Getting Started
+Download the latest release for your platform from [GitHub Releases](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases), extract, and launch PteroSim. See the [documentation](https://pterosimdocs.readthedocs.io/en/latest/) for setup guides and API reference.
 
-Download the latest release from [GitHub Releases](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases), extract, and run `PteroSim.exe`. See the [documentation](https://pterosimdocs.readthedocs.io/en/latest/) for setup guides and API reference.
 
 ## System Requirements
 
