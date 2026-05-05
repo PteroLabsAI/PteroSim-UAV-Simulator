@@ -106,15 +106,13 @@ Download the latest release for your platform from [GitHub Releases](https://git
 
 ## Documentation
 
-Full documentation at [pterolabs.ai](https://pterolabs.ai).
+Full documentation at [pterosimdocs.readthedocs.io](https://pterosimdocs.readthedocs.io/en/latest/).
 
-<!-- TODO: Uncomment when docs pages are live
-- [Getting Started](https://pterolabs.ai/docs/getting-started)
-- [API Reference](https://pterolabs.ai/docs/api)
-- [PX4 Integration](https://pterolabs.ai/docs/px4)
-- [ArduPilot Integration](https://pterolabs.ai/docs/ardupilot)
-- [Custom Airframes](https://pterolabs.ai/docs/custom-airframes)
--->
+- [Getting Started](https://pterosimdocs.readthedocs.io/en/latest/getting_started.html)
+- [First Steps](https://pterosimdocs.readthedocs.io/en/latest/first_steps.html)
+- [SITL Simulation with PX4](https://pterosimdocs.readthedocs.io/en/latest/sitl_simulation_px4.html)
+- [SITL Simulation with ArduPilot](https://pterosimdocs.readthedocs.io/en/latest/sitl_simulation_ardupilot.html)
+- [Python API Reference](https://pterosimdocs.readthedocs.io/en/latest/python_api.html)
 
 ## License
 
