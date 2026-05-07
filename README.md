@@ -119,6 +119,10 @@ Full documentation at [pterosimdocs.readthedocs.io](https://pterosimdocs.readthe
 PteroSim is proprietary software by [PteroLabs AI](https://pterolabs.ai).  
 Free for non-commercial, personal, and academic use. See [LICENSE](LICENSE) for details.
 
+## Reporting Issues
+
+Bugs and feature requests: [issue tracker](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/issues). Commercial support: [info@pterolabs.ai](mailto:info@pterolabs.ai).
+
 ---
 
 <p align="center">
