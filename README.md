@@ -114,6 +114,10 @@ Full documentation at [pterosimdocs.readthedocs.io](https://pterosimdocs.readthe
 - [SITL Simulation with ArduPilot](https://pterosimdocs.readthedocs.io/en/latest/sitl_simulation_ardupilot.html)
 - [Python API Reference](https://pterosimdocs.readthedocs.io/en/latest/python_api.html)
 
+## API Examples
+
+Coming soon — multi-drone orchestration, mission scripting, sensor streaming. See the [Python API reference](https://pterosimdocs.readthedocs.io/en/latest/python_api.html) for now.
+
 ## License
 
 PteroSim is proprietary software by [PteroLabs AI](https://pterolabs.ai).  
