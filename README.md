@@ -11,6 +11,9 @@
   <a href="https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases">
     <img src="https://img.shields.io/github/v/release/PteroLabsAI/PteroSim-UAV-Simulator?style=for-the-badge&color=blue" alt="Release">
   </a>
+  <a href="https://pterosimdocs.readthedocs.io/en/latest/">
+    <img src="https://img.shields.io/badge/Docs-Read%20the%20Docs-8CA1AF?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Documentation">
+  </a>
   <a href="#license">
     <img src="https://img.shields.io/badge/license-Proprietary-orange?style=for-the-badge" alt="License">
   </a>
@@ -21,6 +24,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-PteroLabs-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
 </p>
+
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=4QMwmZL_3O4">Watch Demo</a> ·
