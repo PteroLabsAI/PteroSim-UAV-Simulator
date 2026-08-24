@@ -50,7 +50,7 @@ PteroSim is a UAV simulation platform for drone development, testing, and resear
 - Wind and turbulence modeling
 - PX4 and ArduPilot SITL
 - IMU, GPS, barometer, airspeed, camera
-- Programmatic API for multi-drone orchestration
+- Programmatic gRPC API for multi-drone orchestration
 - Python SDK: `pip install pterosim`
 
 ## Vehicles
@@ -120,7 +120,7 @@ Full documentation at [pterosimdocs.readthedocs.io](https://pterosimdocs.readthe
 
 ## API Examples
 
-Example scripts and clients live in [PteroSimScripts](https://github.com/PteroLabsAI/PteroSimScripts): environment setup, installing the `pterosim` package, and connecting to a running simulator over gRPC.
+Example scripts and clients live in [PteroSimScripts](https://github.com/PteroLabsAI/PteroSimScripts): environment setup, installing the `pterosim` package, and running your first script against a live simulator.
 
 See the [Python API reference](https://pterosimdocs.readthedocs.io/en/latest/python_api.html) for the full API surface.
 
