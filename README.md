@@ -120,7 +120,9 @@ Full documentation at [pterosimdocs.readthedocs.io](https://pterosimdocs.readthe
 
 ## API Examples
 
-Coming soon — multi-drone orchestration, mission scripting, sensor streaming. See the [Python API reference](https://pterosimdocs.readthedocs.io/en/latest/python_api.html) for now.
+Example scripts and clients live in [PteroSimScripts](https://github.com/PteroLabsAI/PteroSimScripts) — environment setup, installing the `pterosim` package, and connecting to a running simulator over gRPC.
+
+See the [Python API reference](https://pterosimdocs.readthedocs.io/en/latest/python_api.html) for the full API surface.
 
 ## License
 
