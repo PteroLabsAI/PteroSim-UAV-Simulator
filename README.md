@@ -129,6 +129,12 @@ See the [Python API reference](https://pterosimdocs.readthedocs.io/en/latest/pyt
 PteroSim is proprietary software by [PteroLabs AI](https://pterolabs.ai).  
 Free for non-commercial, personal, and academic use. See [LICENSE](LICENSE) for details.
 
+## Third-party software
+
+Flight dynamics are computed by [JSBSim](https://github.com/JSBSim-Team/jsbsim) (LGPL-2.1), shipped as a separate shared library. Source code including PteroLabs AI's modifications: [PteroLabsAI/jsbsim](https://github.com/PteroLabsAI/jsbsim). Full license text: [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+
+If you use PteroSim in academic work, please also cite JSBSim: Berndt, J. S., Coconnier, B., De Marco, A., & McLeod, S. *JSBSim - An Open Source Flight Dynamics Software Library*. [doi:10.5281/zenodo.20258621](https://doi.org/10.5281/zenodo.20258621)
+
 ## Reporting Issues
 
 Bugs and feature requests: [issue tracker](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/issues). Commercial support: [info@pterolabs.ai](mailto:info@pterolabs.ai).
