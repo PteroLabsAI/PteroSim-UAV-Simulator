@@ -44,6 +44,8 @@ This Agreement is effective until terminated. PteroLabs AI may terminate this Ag
 
 The Software includes JSBSim, an open-source flight dynamics library (https://github.com/JSBSim-Team/jsbsim) licensed under the GNU Lesser General Public License, version 2.1 (LGPL-2.1). JSBSim is distributed as a separate dynamically linked library (JSBSim.dll on Windows, libJSBSim.so on Linux); its source code, including modifications made by PteroLabs AI, is available at https://github.com/PteroLabsAI/jsbsim. A copy of the LGPL-2.1 is provided in THIRD_PARTY_NOTICES.txt alongside this Agreement. Nothing in this Agreement restricts your rights under the LGPL-2.1 with respect to JSBSim alone, including modifying it for your own use, replacing it with a modified version, and reverse engineering the Software to debug such modifications.
 
+The Software also includes FFmpeg (https://ffmpeg.org), a multimedia framework licensed under the GNU Lesser General Public License, version 3 (LGPL-3.0), which encodes the camera video streams. FFmpeg is distributed as a separate executable (ffmpeg.exe on Windows, ffmpeg on Linux), built without any GPL-licensed component; the build scripts and source are available at https://github.com/BtbN/FFmpeg-Builds and https://ffmpeg.org. This FFmpeg build includes the OpenH264 video codec, Copyright (c) 2013 Cisco Systems, Inc., licensed under the BSD 2-Clause License. Copies of these licenses are provided in THIRD_PARTY_NOTICES.txt. Nothing in this Agreement restricts your rights under the LGPL-3.0 with respect to FFmpeg alone, including replacing it with a modified version.
+
 9. CONTACT
 
 For questions regarding this Agreement, contact: info@pterolabs.ai
