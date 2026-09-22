@@ -50,6 +50,7 @@ PteroSim is a UAV simulation platform for drone development, testing, and resear
 - Wind and turbulence modeling
 - PX4 and ArduPilot SITL
 - IMU, GPS, barometer, airspeed, camera
+- Aircraft defined in JSBSim XML, so you can add your own
 - Programmatic gRPC API for multi-drone orchestration
 - Python SDK: `pip install pterosim`
 
@@ -94,6 +95,12 @@ PteroSim is a UAV simulation platform for drone development, testing, and resear
   </tr>
 </table>
 
+## Add your own aircraft
+
+The aircraft above are not compiled into the simulator. Each one is a folder of JSBSim XML and glTF meshes, shipped loose in `PteroSimAircrafts/` inside the release, so you can copy one and edit it into your own. You can do this on any license tier, Free included.
+
+Examples to copy from: [PteroSimAircrafts](https://github.com/PteroLabsAI/PteroSimAircrafts).
+
 ## Getting Started
 Download the latest release for your platform from [GitHub Releases](https://github.com/PteroLabsAI/PteroSim-UAV-Simulator/releases), extract, and launch PteroSim. See the [documentation](https://pterosimdocs.readthedocs.io/en/latest/) for setup guides and API reference.
 
@@ -131,7 +138,11 @@ Free for non-commercial, personal, and academic use. See [LICENSE](LICENSE) for 
 
 ## Third-party software
 
-Flight dynamics are computed by [JSBSim](https://github.com/JSBSim-Team/jsbsim) (LGPL-2.1), shipped as a separate shared library. Source code including PteroLabs AI's modifications: [PteroLabsAI/jsbsim](https://github.com/PteroLabsAI/jsbsim). Full license text: [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+Flight dynamics are computed by [JSBSim](https://github.com/JSBSim-Team/jsbsim) (LGPL-2.1), shipped as a separate shared library. Source code including PteroLabs AI's modifications: [PteroLabsAI/jsbsim](https://github.com/PteroLabsAI/jsbsim).
+
+Camera video streams are encoded by [FFmpeg](https://ffmpeg.org) (LGPL-3.0), shipped as a separate executable built without any GPL component, from the FFmpeg release/8.1 branch with the [BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds) toolchain. It carries the [OpenH264](https://github.com/cisco/openh264) codec, Copyright (c) 2013 Cisco Systems, Inc. (BSD 2-Clause). `ffmpeg -version` prints the configuration the shipped binary was built with.
+
+Full license texts, the build configuration, and the notices for every library linked into that executable: [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
 
 If you use PteroSim in academic work, please also cite JSBSim: Berndt, J. S., Coconnier, B., De Marco, A., & McLeod, S. *JSBSim - An Open Source Flight Dynamics Software Library*. [doi:10.5281/zenodo.20258621](https://doi.org/10.5281/zenodo.20258621)
 
