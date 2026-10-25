@@ -144,7 +144,7 @@ Camera video streams are encoded by [FFmpeg](https://ffmpeg.org) (LGPL-3.0), shi
 
 Full license texts, the build configuration, and the notices for every library linked into that executable: [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
 
-If you use PteroSim in academic work, please also cite JSBSim: Berndt, J. S., Coconnier, B., De Marco, A., & McLeod, S. *JSBSim - An Open Source Flight Dynamics Software Library*. [doi:10.5281/zenodo.20258621](https://doi.org/10.5281/zenodo.20258621)
+If you use PteroSim in academic work, please also cite JSBSim: Berndt, J. S., Coconnier, B., De Marco, A., & McLeod, S. (2026). JSBSim, An Open Source Flight Dynamics Software Library. *Journal of Open Source Software*, 11(126), 11129. [doi:10.21105/joss.11129](https://doi.org/10.21105/joss.11129)
 
 ## Reporting Issues
 
